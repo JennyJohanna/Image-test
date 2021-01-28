@@ -1,4 +1,7 @@
-.container1 {
+.container {
+    border:purple;
+    background-color: silver;
+    display: flex;
     position: absolute;
     width: 468px;
     height: 160px;
