@@ -1,8 +1,26 @@
-.card {
+.flexboxtest1 {
+    display:flex;
+    width:1152px;
+    height:700px;
+    background-color:#370617;
+    }
     
-position: relative;
-width: 1152px;
-height: 700px;
+    .box-1 {
+    width: 468px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: flex-start;
+    background-color: aqua;
+    border-radius: 5px;
+    }
 
-background: #370617;
-}
+    .box-1__minibox {
+    margin-bottom: 20px;
+    width: 78px;
+    height: 78px;
+    left: 117px;
+    background: #9D0208;
+    border-radius: 4px;
+    }
