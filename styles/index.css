@@ -1,26 +1,287 @@
 .flexboxtest1 {
+    border: 5px purple;
+    position: relative;
+    width: 1152px;
+    height: 700px;
     display:flex;
-    width:1152px;
-    height:700px;
-    background-color:#370617;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#a71b94;
     }
     
     .box-1 {
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 468px;
     height: 160px;
     margin-top: 20px;
     margin-left: 20px;
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: flex-;
     background-color: aqua;
     border-radius: 5px;
     }
 
     .box-1__minibox {
+    align-items:flex-start;
+    width: 78px;
+    height: 78px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    background: #9D0208;
+    border-radius: 4px;
+    }
+
+    .box-2 {
+    width: 468px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    background-color: aqua;
+    border-radius: 5px;
+}
+    
+    .box-2__minibox {
+    width: 78px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: #9D0208;
+    border-radius: 5px;
+}
+
+    .box-3 {
+    width: 468px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+    .box-3__minibox {
+    margin-bottom: 20px;
+    width: 78px;
+    height: 78px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20;
+    background: #9D0208;
+    border-radius: 4px;
+}
+
+
+    .box-4 {
+    width: 468px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: aqua;
+    border-radius: 5px;
+}
+    
+    .box-4__minibox {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     width: 78px;
     height: 78px;
     left: 117px;
     background: #9D0208;
     border-radius: 4px;
+}
+
+    .box-4__minibox:last-of-type {
+    align-self: flex-end;
+}
+
+    .box-5 {
+    width: 468px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 5px;
+}
+    
+    .box-5__minibox {
+    align-items: center;
+    margin-bottom: 20px;
+    width: 78px;
+    height: 78px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: #9D0208;
+    border-radius: 4px;
+}
+
+    .box-5__minibox:first-of-type {
+    height: 120px;
+}
+
+    .box-5__minibox:last-of-type {
+    height: 120px;
+}
+
+    .box-6 {
+    align-items: center;
+    width: 468px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: flex-;
+    background-color: aqua;
+    border-radius: 5px;
+}
+    
+    .box-6__minibox {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 78px;
+    height: 78px;
+    left: 117px;
+    background: #c5178b;
+    border-radius: 4px;
+}
+
+    .box-6__minibox:nth-of-type(2) {
+        flex:2;
+    }
+
+    .flexboxtest2 {
+        margin-top: 1cm;
+        width: 1152px;
+        min-height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color:#c1ddf0;
+    }
+
+    .square1 {
+        width: 273px;
+        height: 220px;
+        margin-top: 20Px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-items: flex-start;
+        background-color: rgb(11, 31, 90);
+    }
+
+    .s__circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: silver;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .square2 {
+        width: 273px;
+        height: 220px;
+        margin-top: 20Px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: rgb(11, 31, 90);
+    }
+
+    .s__circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: silver;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .square3 {
+        width: 273px;
+        height: 220px;
+        margin-top: 20Px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        background-color: rgb(11, 31, 90);
+    }
+
+    .sq__circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: silver;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .square4 {
+        width: 273px;
+        height: 220px;
+        margin-top: 20Px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: rgb(11, 31, 90);
+    }
+
+    .sq__circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: silver;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .square5 {
+        width: 273px;
+        height: 220px;
+        margin-top: 20Px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(11, 31, 90);
+    }
+
+    .sq__circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: silver;
+        margin-top: 20px;
+        margin-left: 20px;
     }
